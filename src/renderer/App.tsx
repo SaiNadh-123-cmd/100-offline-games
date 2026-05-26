@@ -16,36 +16,49 @@ const App = () => {
   useEffect(() => {
     // Load library and settings on mount
     const loadData = async () => {
-      const dbGames = await window.electronAPI.readLibrary();
-      setGames(dbGames);
-      const path = await window.electronAPI.getInstallPath();
-      setInstallPath(path);
+      if (window.electronAPI) {
+        const dbGames = await window.electronAPI.readLibrary();
+        setGames(dbGames);
+        const path = await window.electronAPI.getInstallPath();
+        setInstallPath(path);
+      } else {
+        // Fallback dummy data for web browser preview
+        setGames([{
+          id: "preview-game",
+          name: "Preview Game",
+          genre: "Action",
+          description: "This is a placeholder because you are running in a web browser without Electron."
+        }]);
+      }
     };
     loadData();
 
-    // Listen to clone progress
-    window.electronAPI.onCloneProgress((event: any, data: any) => {
-      setLogs(prev => ({
-        ...prev,
-        [data.url]: [...(prev[data.url] || []), data.message]
-      }));
-    });
+    if (window.electronAPI) {
+      // Listen to clone progress
+      window.electronAPI.onCloneProgress((event: any, data: any) => {
+        setLogs(prev => ({
+          ...prev,
+          [data.url]: [...(prev[data.url] || []), data.message]
+        }));
+      });
 
-    // Listen to build output
-    window.electronAPI.onBuildOutput((event: any, data: any) => {
-      setLogs(prev => ({
-        ...prev,
-        [data.gameId]: [...(prev[data.gameId] || []), data.message]
-      }));
-    });
+      // Listen to build output
+      window.electronAPI.onBuildOutput((event: any, data: any) => {
+        setLogs(prev => ({
+          ...prev,
+          [data.gameId]: [...(prev[data.gameId] || []), data.message]
+        }));
+      });
 
-    return () => {
-      window.electronAPI.removeAllListeners('clone-progress');
-      window.electronAPI.removeAllListeners('build-output');
-    };
+      return () => {
+        window.electronAPI.removeAllListeners('clone-progress');
+        window.electronAPI.removeAllListeners('build-output');
+      };
+    }
   }, []);
 
   const handleInstallGame = async (game: any) => {
+    if (!window.electronAPI) return alert("Install is only available in the desktop app.");
     const destFolder = `${installPath}\\${game.id}`;
     
     // Clone
@@ -60,6 +73,7 @@ const App = () => {
   };
 
   const handlePlayGame = async (game: any) => {
+    if (!window.electronAPI) return alert("Play is only available in the desktop app.");
     const destFolder = `${installPath}\\${game.id}`;
     const launchCmd = typeof game.launchCommand === 'string' ? game.launchCommand : game.launchCommand?.windows;
     
@@ -72,6 +86,7 @@ const App = () => {
   };
 
   const handleSelectInstallPath = async () => {
+    if (!window.electronAPI) return;
     const newPath = await window.electronAPI.selectDirectory();
     if (newPath) {
       await window.electronAPI.setInstallPath(newPath);
@@ -84,7 +99,7 @@ const App = () => {
       {/* Sidebar */}
       <div className="w-64 bg-card border-r border-slate-700/50 p-4 flex flex-col gap-4">
         <h1 className="text-xl font-bold text-primary">OpenGames Hub</h1>
-        <nav className="flex flex-col gap-2">
+        <nav className="flex flex-col gap-2 flex-1">
           <button 
             onClick={() => setActiveTab('library')}
             className={`text-left px-4 py-2 rounded transition ${activeTab === 'library' ? 'bg-slate-800' : 'hover:bg-slate-700'}`}>
@@ -101,12 +116,17 @@ const App = () => {
             Settings
           </button>
         </nav>
+        
+        {/* Ad Placeholder Space in Sidebar */}
+        <div className="mt-auto bg-slate-800/50 border border-slate-700/50 h-64 rounded flex items-center justify-center p-4 text-center">
+          <span className="text-sm text-slate-500 font-semibold uppercase tracking-wider">Advertisement Space</span>
+        </div>
       </div>
       
       {/* Main Content */}
-      <div className="flex-1 p-8 overflow-y-auto">
+      <div className="flex-1 p-8 overflow-y-auto flex flex-col">
         {activeTab === 'library' && (
-          <>
+          <div className="flex-1">
             <h2 className="text-2xl font-bold mb-6">Your Library</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               {games.map(game => (
@@ -140,18 +160,18 @@ const App = () => {
                 </div>
               ))}
             </div>
-          </>
+          </div>
         )}
 
         {activeTab === 'discover' && (
-          <div>
+          <div className="flex-1">
             <h2 className="text-2xl font-bold mb-6">Discover New Games</h2>
             <p className="text-slate-400">Integration with GitHub APIs and community lists coming soon.</p>
           </div>
         )}
 
         {activeTab === 'settings' && (
-          <div>
+          <div className="flex-1">
             <h2 className="text-2xl font-bold mb-6">Settings</h2>
             
             <div className="bg-card p-6 rounded-lg border border-slate-700/50">
@@ -175,6 +195,11 @@ const App = () => {
             </div>
           </div>
         )}
+
+        {/* Ad Placeholder Space in Bottom Area */}
+        <div className="mt-8 bg-slate-800/50 border border-slate-700/50 h-24 rounded flex items-center justify-center p-4 text-center">
+          <span className="text-sm text-slate-500 font-semibold uppercase tracking-wider">Bottom Advertisement Space</span>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,75 @@
+[
+  {
+    "id": "endless-sky",
+    "name": "Endless Sky",
+    "description": "A sandbox space trading and combat game similar to the classic Escape Velocity series.",
+    "repoUrl": "https://github.com/endless-sky/endless-sky",
+    "genre": "Space Sim",
+    "type": "native",
+    "buildInstructions": {
+      "windows": "scons",
+      "linux": "scons",
+      "macos": "scons"
+    },
+    "launchCommand": {
+      "windows": "endless-sky.exe",
+      "linux": "./endless-sky",
+      "macos": "EndlessSky.app/Contents/MacOS/EndlessSky"
+    }
+  },
+  {
+    "id": "openttd",
+    "name": "OpenTTD",
+    "description": "An open source simulation game based upon Transport Tycoon Deluxe.",
+    "repoUrl": "https://github.com/OpenTTD/OpenTTD",
+    "genre": "Simulation",
+    "type": "native",
+    "buildInstructions": {
+      "windows": "cmake -B build && cmake --build build",
+      "linux": "cmake -B build && cmake --build build",
+      "macos": "cmake -B build && cmake --build build"
+    },
+    "launchCommand": {
+      "windows": "build/openttd.exe",
+      "linux": "build/openttd",
+      "macos": "build/openttd"
+    }
+  },
+  {
+    "id": "2048",
+    "name": "2048",
+    "description": "A small clone of 1024.",
+    "repoUrl": "https://github.com/gabrielecirulli/2048",
+    "genre": "Puzzle",
+    "type": "html5",
+    "launchCommand": "index.html"
+  },
+  {
+    "id": "clumsy-bird",
+    "name": "Clumsy Bird",
+    "description": "A MelonJS port of the famous Flappy Bird Game",
+    "repoUrl": "https://github.com/ellisonleao/clumsy-bird",
+    "genre": "Arcade",
+    "type": "html5",
+    "buildInstructions": {
+      "all": "npm install && npm run build"
+    },
+    "launchCommand": "index.html"
+  },
+  {
+    "id": "supertux",
+    "name": "SuperTux",
+    "description": "A classic 2D jump'n run sidescroller game in a style similar to the original Super Mario games.",
+    "repoUrl": "https://github.com/supertux/supertux",
+    "genre": "Platformer",
+    "type": "native",
+    "buildInstructions": {
+      "all": "cmake . && make"
+    },
+    "launchCommand": {
+      "windows": "supertux2.exe",
+      "linux": "./supertux2",
+      "macos": "./supertux2"
+    }
+  }
+]

@@ -89,24 +89,8 @@ ipcMain.handle('read-library', () => {
   return [];
 });
 
-ipcMain.handle('clone-game', async (event, cloneCmd: string, destPath: string) => {
-  return await cloneRepository(cloneCmd, destPath, (msg) => {
-    event.sender.send('clone-progress', { url: destPath, message: msg });
-  });
-});
-
-ipcMain.handle('build-game', async (event, gameId: string, buildCmd: string, cwd: string) => {
-  return await buildGame(buildCmd, cwd, (msg) => {
-    event.sender.send('build-output', { gameId, message: msg });
-  });
-});
-
-ipcMain.handle('launch-game', (event, type: string, execPath: string, cwd: string) => {
-  if (type === 'html5') {
-    launchHtml5Game(execPath);
-  } else {
-    launchNativeGame(execPath, cwd, (msg) => {
-      console.log(`[Launch ${path.basename(execPath)}] ${msg}`);
-    });
-  }
+// Reduced IPC for HTML5 Portal Version
+// No native cloning or building required anymore.
+ipcMain.handle('select-directory', async () => {
+  return null; // Deprecated
 });

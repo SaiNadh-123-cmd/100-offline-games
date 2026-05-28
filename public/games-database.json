@@ -1,0 +1,302 @@
+[
+  {
+    "id": "2048",
+    "name": "2048",
+    "description": "A popular sliding tile puzzle game.",
+    "genre": "Puzzle",
+    "play_url": "https://play2048.co/",
+    "github_url": "https://github.com/gabrielecirulli/2048",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/18/2048_logo.svg"
+  },
+  {
+    "id": "clumsy-bird",
+    "name": "Clumsy Bird",
+    "description": "A Flappy Bird clone made with MelonJS.",
+    "genre": "Arcade",
+    "play_url": "https://ellisonleao.github.io/clumsy-bird/",
+    "github_url": "https://github.com/ellisonleao/clumsy-bird",
+    "embed_type": "iframe",
+    "thumbnail": "https://raw.githubusercontent.com/ellisonleao/clumsy-bird/master/data/img/bg.png"
+  },
+  {
+    "id": "hextris",
+    "name": "Hextris",
+    "description": "An addictive fast-paced puzzle game inspired by Tetris.",
+    "genre": "Puzzle",
+    "play_url": "https://hextris.io/",
+    "github_url": "https://github.com/hextris/hextris",
+    "embed_type": "iframe",
+    "thumbnail": "https://hextris.io/images/icons/apple-touch-icon-120x120.png"
+  },
+  {
+    "id": "pacman-canvas",
+    "name": "Pac-Man HTML5",
+    "description": "A faithful recreation of Pac-Man using HTML5 Canvas.",
+    "genre": "Arcade",
+    "play_url": "https://pacman.platzh1rsch.ch/",
+    "github_url": "https://github.com/platzhersh/pacman-canvas",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/59/Pac-man.png"
+  },
+  {
+    "id": "astray",
+    "name": "Astray",
+    "description": "A WebGL maze game built with Three.js and Box2dWeb.",
+    "genre": "Puzzle",
+    "play_url": "https://www.stuartmarmstrong.com/astray/",
+    "github_url": "https://github.com/wwwtyro/Astray",
+    "embed_type": "iframe",
+    "thumbnail": "https://raw.githubusercontent.com/wwwtyro/Astray/master/images/astray.jpg"
+  },
+  {
+    "id": "mkjs",
+    "name": "Mortal Kombat (mk.js)",
+    "description": "A Mortal Kombat clone created with HTML5 canvas and JavaScript.",
+    "genre": "Fighting",
+    "play_url": "https://mgechev.github.io/mk.js/",
+    "github_url": "https://github.com/mgechev/mk.js",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/53/Mortal_Kombat_Logo.png"
+  },
+  {
+    "id": "hexgl",
+    "name": "HexGL",
+    "description": "A futuristic HTML5 racing game built with Three.js.",
+    "genre": "Racing",
+    "play_url": "https://hexgl.bkcore.com/play/",
+    "github_url": "https://github.com/BKcore/HexGL",
+    "embed_type": "iframe",
+    "thumbnail": "https://hexgl.bkcore.com/play/textures/hud/hexgl.png"
+  },
+  {
+    "id": "browserquest",
+    "name": "BrowserQuest",
+    "description": "A multiplayer RPG created by Mozilla Foundation.",
+    "genre": "RPG",
+    "play_url": "http://browserquest.mozilla.org/",
+    "github_url": "https://github.com/browserquest/BrowserQuest",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/e/ed/BrowserQuest_screenshot.jpg"
+  },
+  {
+    "id": "doom-wasm",
+    "name": "Doom WebAssembly",
+    "description": "The classic Doom engine running entirely in the browser via WebAssembly.",
+    "genre": "Shooting",
+    "play_url": "https://silentspacemarine.com/",
+    "github_url": "https://github.com/diekmann/wasm-fizzbuzz",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/5c/Doom_cover_art.jpg"
+  },
+  {
+    "id": "js-doom",
+    "name": "JS-Doom",
+    "description": "A port of DOOM to JavaScript using Emscripten.",
+    "genre": "Shooting",
+    "play_url": "https://js-dos.com/games/doom.exe.html",
+    "github_url": "https://github.com/caiiiycuk/js-dos",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/5c/Doom_cover_art.jpg"
+  },
+  {
+    "id": "space-invaders",
+    "name": "Space Invaders",
+    "description": "A classic Space Invaders clone in HTML5.",
+    "genre": "Shooting",
+    "play_url": "https://cykod.github.io/AlienInvasion/",
+    "github_url": "https://github.com/cykod/AlienInvasion",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/e/e0/Space_Invaders_marquee.png"
+  },
+  {
+    "id": "asteroids",
+    "name": "Asteroids HTML5",
+    "description": "A faithful remake of the classic arcade game Asteroids.",
+    "genre": "Shooting",
+    "play_url": "https://dougx.net/asteroids/asteroids.html",
+    "github_url": "https://github.com/dmcinnes/HTML5-Asteroids",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/c/c9/Asteroids_arcade_flyer.jpg"
+  },
+  {
+    "id": "quakejs",
+    "name": "QuakeJS",
+    "description": "A port of ioquake3 to JavaScript.",
+    "genre": "Shooting",
+    "play_url": "http://www.quakejs.com/",
+    "github_url": "https://github.com/inolen/quakejs",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/36/Quake3-box.jpg"
+  },
+  {
+    "id": "duckhunt",
+    "name": "Duck Hunt JS",
+    "description": "A JavaScript implementation of the classic NES Duck Hunt game.",
+    "genre": "Shooting",
+    "play_url": "https://duckhuntjs.com/",
+    "github_url": "https://github.com/MattSurabian/DuckHunt-JS",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/c/cb/Duck_Hunt_Coverart.png"
+  },
+  {
+    "id": "flappy-bird",
+    "name": "Flappy Bird HTML5",
+    "description": "A perfect recreation of Flappy Bird in Phaser.js.",
+    "genre": "Arcade",
+    "play_url": "https://hyspace.io/Flappy-Bird/",
+    "github_url": "https://github.com/hyspace/Flappy-Bird",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png"
+  },
+  {
+    "id": "snake",
+    "name": "Snake Game",
+    "description": "A classic snake game written in pure JS.",
+    "genre": "Arcade",
+    "play_url": "https://patorjk.com/games/snake/",
+    "github_url": "https://github.com/patorjk/JavaScript-Snake",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Snake_videogame_logo.png/120px-Snake_videogame_logo.png"
+  },
+  {
+    "id": "custom-tetris",
+    "name": "Custom Tetris",
+    "description": "A customizable, open-source Tetris implementation.",
+    "genre": "Puzzle",
+    "play_url": "https://ondras.github.io/custom-tetris/",
+    "github_url": "https://github.com/ondras/custom-tetris",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/NES_Tetris_Box_Front.jpg/220px-NES_Tetris_Box_Front.jpg"
+  },
+  {
+    "id": "geometry-dash",
+    "name": "Geometry Dash HTML5",
+    "description": "A web-based fan remake of Geometry Dash.",
+    "genre": "Platformer",
+    "play_url": "https://gd.kdbot.xyz/",
+    "github_url": "https://github.com/kdbotxyz/gd-html5",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/35/Geometry_Dash_Logo.PNG"
+  },
+  {
+    "id": "wolf3d",
+    "name": "Wolfenstein 3D JS",
+    "description": "Wolfenstein 3D ported to HTML5 and JS.",
+    "genre": "Shooting",
+    "play_url": "https://wolf3d.net/",
+    "github_url": "https://github.com/id-Software/wolf3d",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/30/Wolfenstein_3D_cover.png"
+  },
+  {
+    "id": "radius-raid",
+    "name": "Radius Raid",
+    "description": "A space-themed, fast-paced shoot 'em up game using HTML5 canvas.",
+    "genre": "Shooting",
+    "play_url": "https://js13kgames.com/games/radius-raid/index.html",
+    "github_url": "https://github.com/jackrugile/radius-raid",
+    "embed_type": "iframe",
+    "thumbnail": "https://js13kgames.com/games/radius-raid/thumb.jpg"
+  },
+  {
+    "id": "core-type",
+    "name": "Core Type",
+    "description": "A side-scrolling shooting game with retro vibes.",
+    "genre": "Shooting",
+    "play_url": "https://js13kgames.com/games/core-type/index.html",
+    "github_url": "https://github.com/tyleronlinux/core-type",
+    "embed_type": "iframe",
+    "thumbnail": "https://js13kgames.com/games/core-type/thumb.jpg"
+  },
+  {
+    "id": "super-mario-html5",
+    "name": "Super Mario HTML5",
+    "description": "An HTML5 recreation of Super Mario Bros.",
+    "genre": "Platformer",
+    "play_url": "https://fullscreenmario.com/",
+    "github_url": "https://github.com/Diogenesthecynic/FullScreenMario",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png"
+  },
+  {
+    "id": "doodle-jump",
+    "name": "Doodle Jump HTML5",
+    "description": "An HTML5 implementation of the famous Doodle Jump game.",
+    "genre": "Arcade",
+    "play_url": "https://khtml5.com/games/doodle-jump/",
+    "github_url": "https://github.com/khtml5/doodle-jump",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/ab/Doodle_Jump.png"
+  },
+  {
+    "id": "breakout",
+    "name": "Breakout",
+    "description": "The classic block-breaking game.",
+    "genre": "Arcade",
+    "play_url": "https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript",
+    "github_url": "https://github.com/end3r/Gamedev-Canvas-workshop",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/e/e0/Breakout_marquee.jpg"
+  },
+  {
+    "id": "minesweeper",
+    "name": "Minesweeper",
+    "description": "A faithful replica of Windows XP Minesweeper.",
+    "genre": "Puzzle",
+    "play_url": "https://minesweeperonline.com/",
+    "github_url": "https://github.com/mrgnr/minesweeper",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/d/d4/Minesweeper_Icon.png"
+  },
+  {
+    "id": "simcity",
+    "name": "Micropolis (SimCity)",
+    "description": "An HTML5 port of the original SimCity classic (Micropolis).",
+    "genre": "Simulation",
+    "play_url": "http://micropolis.mostka.com/",
+    "github_url": "https://github.com/simcity/micropolis",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/2/25/SimCity_Box_Cover.jpg"
+  },
+  {
+    "id": "dino-game",
+    "name": "T-Rex Runner",
+    "description": "The classic Chrome offline dinosaur game.",
+    "genre": "Arcade",
+    "play_url": "https://chromedino.com/",
+    "github_url": "https://github.com/wayou/t-rex-runner",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Chrome_T-Rex_dinosaur_game.png"
+  },
+  {
+    "id": "sudoku",
+    "name": "Sudoku",
+    "description": "A clean, responsive HTML5 Sudoku game.",
+    "genre": "Puzzle",
+    "play_url": "https://sudoku.com/",
+    "github_url": "https://github.com/Pocket-Inc/sudoku-html5",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Sudoku-by-L2G-20050714.svg"
+  },
+  {
+    "id": "solitaire",
+    "name": "Solitaire",
+    "description": "Classic Klondike Solitaire built with web technologies.",
+    "genre": "Card",
+    "play_url": "https://worldofsolitaire.com/",
+    "github_url": "https://github.com/mrdaveb/solitaire",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Solitaire_Windows_XP.png"
+  },
+  {
+    "id": "pong",
+    "name": "Pong HTML5",
+    "description": "The grandfather of video games, built using Canvas.",
+    "genre": "Arcade",
+    "play_url": "https://www.ponggame.org/",
+    "github_url": "https://github.com/kakes1/Pong",
+    "embed_type": "iframe",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Pong.png"
+  }
+]
